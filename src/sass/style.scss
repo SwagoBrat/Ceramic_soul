@@ -1,3 +1,10 @@
+@use "/src/sass/libs/fontello.css";
+@use "/src/sass/libs/modern-normalize.min.css";
+@use "/src/sass/base/variable.scss" as v;
+@use "/src/sass/pxtorem.scss" as px;
+
+
+
 h1,
 h2,
 h3,
@@ -48,4 +55,8 @@ img {
 html {
 	font-family: "Barlow", sans-serif;
 	scroll-behavior: smooth;
+}
+
+h1 {
+	font-size: 100px;
 }
