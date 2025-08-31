@@ -1,7 +1,7 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .newsletter {
-	margin-top: 50px;
+	margin-top: 60px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background-color: $dark;
@@ -193,6 +193,7 @@
 
 @media screen and (min-width:1920px) {
 	.newsletter {
+		margin-top: 100px;
 
 		padding-top: 80px;
 
