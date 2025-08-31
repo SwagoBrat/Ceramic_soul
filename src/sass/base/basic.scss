@@ -37,6 +37,11 @@ html {
 	scroll-behavior: smooth;
 }
 
+html::selection {
+	color: $light;
+	background-color: $dark;
+}
+
 body {
 	background-color: $light;
 }
