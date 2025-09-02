@@ -39,6 +39,27 @@
 	}
 }
 
+.btn-read {
+	@include button;
+	width: 145px;
+	height: 32px;
+	font-size: 14px;
+	font-weight: 400;
+	border: 1px solid $dark;
+
+
+	&:hover {
+		color: $ceramic;
+		border: 1px solid $ceramic;
+	}
+
+	&:active {
+		color: $dark;
+		border: 1px solid $ceramic;
+	}
+
+}
+
 @media screen and (min-width: 1200px) {
 	.btn-default {
 		&:hover {

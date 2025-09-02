@@ -64,5 +64,5 @@ try {
 	});
 
 	// Показываем первый контент при загрузке
-	contents.forEach((c, i) => (c.style.display = i === 0 ? "grid" : "none"));
+	contents.forEach((c, i) => (c.style.display = i === 0 ? "grid " : "none"));
 } catch (e) { }
