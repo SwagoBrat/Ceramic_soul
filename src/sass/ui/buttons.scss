@@ -14,11 +14,6 @@
 	height: 40px;
 	font-size: 16px;
 
-	&:focus {
-		outline: 1px solid $ceramic;
-		border: 1px solid $ceramic;
-	}
-
 	&:disabled {
 		color: $ui-disabled;
 		border: 1px solid $ui-disabled;
@@ -73,16 +68,28 @@
 			color: $dark;
 			border: none;
 		}
+
+
+	}
+
+	.btn-submit {
+		&:hover {
+			background-color: $ceramic;
+		}
+
+		&:active {
+			background-color: $dark;
+		}
 	}
 
 	.btn-send {
-		&:active {
-			outline: 1px solid $ceramic;
+		&:hover {
+			color: $ceramic;
 			border: 1px solid $ceramic;
 		}
 
-		&:hover {
-			color: $ceramic;
+		&:active {
+			color: $dark;
 			border: 1px solid $ceramic;
 		}
 
