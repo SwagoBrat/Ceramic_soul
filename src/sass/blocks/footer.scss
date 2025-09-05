@@ -1,6 +1,16 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .newsletter {
+
+	.just-validate-error-field {
+
+		border-color: $ui-error;
+
+		&::placeholder {
+			color: $ui-error;
+		}
+	}
+
 	margin-top: 60px;
 	padding-top: 50px;
 	padding-bottom: 50px;

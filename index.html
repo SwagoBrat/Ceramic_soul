@@ -107,22 +107,22 @@
 						<fieldset class="touch__fieldset">
 							<div class="touch__input-block">
 								<label class="touch__label" for="name">Name</label>
-								<input class="touch__input" type="text" id="name" name="name" placeholder="Name"
-									required />
+								<input class="touch__input" type="text" id="name" name="name" placeholder="Name" />
 							</div>
 							<div class="touch__input-block">
 								<label class="touch__label" for="email">Email</label>
-								<input class="touch__input" type="email" id="email" name="email" placeholder="Email"
-									required />
+								<input class="touch__input" type="email" id="email" name="email" placeholder="Email" />
 							</div>
 						</fieldset>
 						<label class="touch__label" for="question">Your question</label>
-						<textarea class="touch__textarea" name="question" id="question" placeholder="Question"
-							required></textarea>
+						<textarea class="touch__textarea" name="question" id="question"
+							placeholder="Question"></textarea>
+						<div class="error-message"></div>
 
 						<label class="touch__label touch__check-block" for="checkbox">
-							<input required class="touch__checkbox" type="checkbox" id="checkbox" />
+							<input class="touch__checkbox" type="checkbox" id="checkbox" />
 							I agree with the <a href="#">terms</a></label>
+						<div class="checkbox-error-message"></div>
 
 						<button class="btn-send touch__btn">send request</button>
 					</form>
@@ -165,15 +165,16 @@
 				<div class="newsletter__keep">
 					<h4 class="newsletter__title title-h4">newsletter</h4>
 					<p class="newsletter__text">Keep up to date with news and promotions</p>
-					<form action="#">
+					<form class="newsletter__form" action="#">
 						<fieldset class="touch__fieldset">
-							<input required type="email" name="email" placeholder="Enter your e-mail"
+							<input type="email" name="email" id="email" placeholder="Enter your e-mail"
 								class="newsletter__input">
 						</fieldset>
 						<label class="touch__lable touch__check-block newsletter__lable" for="checkbox">
-							<input required class="touch__checkbox newsletter__checkbox" type="checkbox" id="checkbox"
-								name="checkbox">
+							<input required class="touch__checkbox newsletter__checkbox" type="checkbox"
+								id="footer__checkbox" name="checkbox">
 							<span>I agree with</span> <a href="#">terms</a></label>
+						<div class="checkbox-error-message"></div>
 						<button class="btn-submit newsletter__button">submit</button>
 					</form>
 				</div>

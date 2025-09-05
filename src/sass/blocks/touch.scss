@@ -1,6 +1,10 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .touch {
+	.just-validate-error-field {
+		border: 1px solid $ui-error;
+	}
+
 	padding-top: 60px;
 
 	&__wrapper {
@@ -40,8 +44,9 @@
 		background: #fff;
 
 		&:focus {
+			z-index: 1000;
 			border: none;
-			outline: 1px solid $dark;
+			border: 1px solid $dark;
 		}
 
 		&::placeholder {
@@ -61,8 +66,7 @@
 		resize: none;
 
 		&:focus {
-			border: none;
-			outline: 1px solid $dark;
+			border: 1px solid $dark;
 		}
 
 		&::placeholder {
@@ -88,6 +92,8 @@
 		margin-right: 15px;
 		width: 15px;
 		height: 15px;
+		outline-color: $light;
+		;
 	}
 
 	&__btn {
@@ -97,6 +103,8 @@
 	&__decor {
 		display: none;
 	}
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -128,7 +136,7 @@
 
 		&__input {
 			&:hover {
-				border: none;
+				border: 1px solid $dark;
 				outline: 1px solid $dark;
 			}
 		}

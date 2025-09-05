@@ -89,15 +89,16 @@
                 <div class="newsletter__keep">
                     <h4 class="newsletter__title title-h4">newsletter</h4>
                     <p class="newsletter__text">Keep up to date with news and promotions</p>
-                    <form action="#">
+                    <form class="newsletter__form" action="#">
                         <fieldset class="touch__fieldset">
-                            <input required type="email" name="email" placeholder="Enter your e-mail"
+                            <input type="email" name="email" id="email" placeholder="Enter your e-mail"
                                 class="newsletter__input">
                         </fieldset>
                         <label class="touch__lable touch__check-block newsletter__lable" for="checkbox">
-                            <input required class="touch__checkbox newsletter__checkbox" type="checkbox" id="checkbox"
-                                name="checkbox">
+                            <input required class="touch__checkbox newsletter__checkbox" type="checkbox"
+                                id="footer__checkbox" name="checkbox">
                             <span>I agree with</span> <a href="#">terms</a></label>
+                        <div class="checkbox-error-message"></div>
                         <button class="btn-submit newsletter__button">submit</button>
                     </form>
                 </div>
@@ -134,7 +135,6 @@
             <p class="newsletter__subtitle">© Copyright 2025, Ceramic soul</p>
         </div>
     </footer>
-
     <script type="module" src="/src/js/script.js"></script>
 </body>
 

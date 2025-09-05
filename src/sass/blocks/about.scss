@@ -3,6 +3,10 @@
 .about {
     margin-top: 50px;
 
+    .just-validate-error-field {
+        border: 1px solid $ui-error;
+    }
+
     &__title {
         margin-top: 60px;
     }
