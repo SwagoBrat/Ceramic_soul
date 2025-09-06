@@ -13,8 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
         rel="stylesheet" />
-  <script type="module" crossorigin src="/assets/script-Cx6IhGZW.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/script-BjZ4wF_9.css">
+  <script type="module" crossorigin src="/assets/script-CN-bN-iS.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/script-9b8h3Koe.css">
 </head>
 
 <body>
@@ -34,21 +34,23 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="header__top">
-                    <div class="burger"><span></span><span></span><span></span></div>
-                    <a href="/index.html" class="header__logo"><img src="/assets/logo-CiQoG76i.png" alt="logo" /></a>
-                    <div class="header__icons">
-                        <a href="#"><span class="icon-search"></span></a>
-                        <a href="#"><span class="icon-shopping-bag"></span></a>
+                <div class="header__animation">
+                    <div class="header__top">
+                        <div class="burger"><span></span><span></span><span></span></div>
+                        <a href="/index.html" class="header__logo"><img src="/assets/logo-CiQoG76i.png" alt="logo" /></a>
+                        <div class="header__icons">
+                            <a href="#"><span class="icon-search"></span></a>
+                            <a href="#"><span class="icon-shopping-bag"></span></a>
+                        </div>
                     </div>
+                    <nav class="header__nav">
+                        <ul>
+                            <li><a href="/catalog.html" class="header__link">catalog</a></li>
+                            <li><a href="/blog.html" class="header__link">blog</a></li>
+                            <li><a href="/about.html" class="header__link">about</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="header__nav">
-                    <ul>
-                        <li><a href="/catalog.html" class="header__link">catalog</a></li>
-                        <li><a href="/blog.html" class="header__link">blog</a></li>
-                        <li><a href="/about.html" class="header__link">about</a></li>
-                    </ul>
-                </nav>
             </header>
 
             <h1 class="title-h1 catalog__title">out pottery</h1>
@@ -116,15 +118,16 @@
                 <div class="newsletter__keep">
                     <h4 class="newsletter__title title-h4">newsletter</h4>
                     <p class="newsletter__text">Keep up to date with news and promotions</p>
-                    <form action="#">
+                    <form class="newsletter__form" action="#">
                         <fieldset class="touch__fieldset">
-                            <input required type="email" name="email" placeholder="Enter your e-mail"
+                            <input type="email" name="email" id="email" placeholder="Enter your e-mail"
                                 class="newsletter__input">
                         </fieldset>
                         <label class="touch__lable touch__check-block newsletter__lable" for="checkbox">
-                            <input required class="touch__checkbox newsletter__checkbox" type="checkbox" id="checkbox"
-                                name="checkbox">
+                            <input required class="touch__checkbox newsletter__checkbox" type="checkbox"
+                                id="footer__checkbox" name="checkbox">
                             <span>I agree with</span> <a href="#">terms</a></label>
+                        <div class="checkbox-error-message"></div>
                         <button class="btn-submit newsletter__button">submit</button>
                     </form>
                 </div>

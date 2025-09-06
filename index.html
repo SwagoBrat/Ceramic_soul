@@ -32,21 +32,23 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="header__top">
-					<div class="burger"><span></span><span></span><span></span></div>
-					<a href="#" class="header__logo"><img src="/src/logo/logo.png" alt="logo" /></a>
-					<div class="header__icons">
-						<a href="#"><span class="icon-search"></span></a>
-						<a href="#"><span class="icon-shopping-bag"></span></a>
+				<div class="header__animation">
+					<div class="header__top">
+						<div class="burger"><span></span><span></span><span></span></div>
+						<a href="#" class="header__logo"><img src="/src/logo/logo.png" alt="logo" /></a>
+						<div class="header__icons">
+							<a href="#"><span class="icon-search"></span></a>
+							<a href="#"><span class="icon-shopping-bag"></span></a>
+						</div>
 					</div>
+					<nav class="header__nav">
+						<ul>
+							<li><a href="/catalog.html" class="header__link">catalog</a></li>
+							<li><a href="/blog.html" class="header__link">blog</a></li>
+							<li><a href="/about.html" class="header__link">about</a></li>
+						</ul>
+					</nav>
 				</div>
-				<nav class="header__nav">
-					<ul>
-						<li><a href="/catalog.html" class="header__link">catalog</a></li>
-						<li><a href="/blog.html" class="header__link">blog</a></li>
-						<li><a href="/about.html" class="header__link">about</a></li>
-					</ul>
-				</nav>
 			</header>
 			<div class="promo__wrapper">
 				<h1 class="title-h1-italic promo__title">
@@ -165,7 +167,7 @@
 				<div class="newsletter__keep">
 					<h4 class="newsletter__title title-h4">newsletter</h4>
 					<p class="newsletter__text">Keep up to date with news and promotions</p>
-					<form class="newsletter__form" action="#">
+					<form class="footer__form" action="#">
 						<fieldset class="touch__fieldset">
 							<input type="email" name="email" id="email" placeholder="Enter your e-mail"
 								class="newsletter__input">
@@ -173,7 +175,8 @@
 						<label class="touch__lable touch__check-block newsletter__lable" for="checkbox">
 							<input required class="touch__checkbox newsletter__checkbox" type="checkbox"
 								id="footer__checkbox" name="checkbox">
-							<span>I agree with</span> <a href="#">terms</a></label>
+							<span>I agree with</span> <a href="#">terms</a>
+						</label>
 						<div class="checkbox-error-message"></div>
 						<button class="btn-submit newsletter__button">submit</button>
 					</form>
