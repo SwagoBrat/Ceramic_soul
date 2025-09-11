@@ -1,0 +1,207 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.newsletter {
+
+	.just-validate-error-field {
+
+		border-color: $ui-error;
+
+		&::placeholder {
+			color: $ui-error;
+		}
+	}
+
+	margin-top: 60px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: $dark;
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__keep {
+		width: 293px
+	}
+
+	&__title {
+		text-transform: uppercase;
+		color: $light;
+	}
+
+	&__text {
+		margin-top: 40px;
+		color: $light;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 100%;
+	}
+
+	&__input {
+		width: 100%;
+		margin-top: 40px;
+		padding-bottom: 15px;
+		border-width: 0 0 1px 0;
+		border-color: $light;
+		color: $light;
+		background-color: transparent;
+
+		&::placeholder {
+			color: $light;
+		}
+
+		&:focus-visible {
+			border-width: 0 0 1px 0;
+			outline: none;
+		}
+	}
+
+	&__lable {
+		gap: 5px;
+
+		span {
+			color: $light;
+
+			a {
+				display: block;
+				padding-left: 4px;
+			}
+		}
+	}
+
+	&__checkbox {
+		appearance: none;
+		width: 15px;
+		height: 15px;
+		border: 1px solid $light;
+		border-radius: 4px;
+		background: transparent;
+		cursor: pointer;
+		position: relative;
+
+		&:checked::after {
+			content: "✓";
+			color: white;
+			font-size: 13px;
+			position: absolute;
+			top: 0px;
+			left: 2px;
+		}
+	}
+
+	&__button {
+		margin-top: 20px;
+		padding: 11px 18px;
+
+	}
+
+	&__diskovery {
+		margin-top: 40px;
+		display: flex;
+		column-gap: 66px;
+		row-gap: 40px;
+		flex-wrap: wrap;
+
+		.enumeration {
+			display: flex;
+			flex-direction: column;
+			row-gap: 40px;
+
+			.nav {
+				display: flex;
+				flex-direction: column;
+				row-gap: 20px;
+
+				a {
+					color: $light;
+					text-decoration: none;
+					font-weight: 400;
+					line-height: 100%;
+				}
+			}
+		}
+	}
+
+	&__follow {
+		margin-top: 40px;
+
+		.icons {
+			margin-top: 40px;
+			display: flex;
+			column-gap: 10px;
+
+			align-items: center;
+
+			.icon {
+				text-decoration: none;
+				color: $light;
+				display: block;
+				width: 24px;
+				height: 24px;
+			}
+		}
+	}
+
+	&__subtitle {
+		color: $light;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 100%;
+		text-align: center;
+		margin-top: 40px;
+	}
+}
+
+@media screen and (min-width:768px) {
+	.newsletter {
+		&__wrapper {
+			column-gap: 197px;
+		}
+
+		&__diskovery {
+			width: 428px;
+		}
+
+		&__follow {
+			width: 92px;
+		}
+	}
+}
+
+@media screen and (min-width:1200px) {
+	.newsletter {
+
+		&__diskovery {
+			margin-top: 0;
+		}
+
+		&__follow {
+			margin-top: 0;
+		}
+
+		&__wrapper {
+			column-gap: 163px;
+		}
+
+		&__subtitle {
+			margin-top: 50px;
+		}
+	}
+}
+
+@media screen and (min-width:1920px) {
+	.newsletter {
+		margin-top: 100px;
+
+		padding-top: 80px;
+
+		&__wrapper {
+			column-gap: 308px;
+		}
+
+		&__subtitle {
+			margin-top: 18px;
+		}
+	}
+}

@@ -1,0 +1,93 @@
+@use "/src/sass/base/variables.scss" as *;
+
+
+.blog {
+    padding-top: 50px;
+
+    img {
+        object-fit: cover;
+        max-inline-size: calc(100% + 2px);
+        transform: translateX(-1px) translateY(-1px);
+    }
+
+    &__title {
+        margin-top: 60px;
+
+    }
+
+    &__wrapper {
+        height: max-content;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+        column-gap: 40px;
+    }
+
+    &__card {
+        border: 1px solid $dark;
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    &__data {
+        &-column {
+            padding: 25px 25px 0 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+    }
+
+    &__text {
+        padding: 25px;
+        color: $dark;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 100%;
+    }
+
+    &__title-h3 {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .blog {
+
+        &__wrapper {
+            padding: 25px 25px 0 25px;
+            position: relative;
+        }
+
+        &__wrapper::before {
+            content: "";
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 1px solid $dark;
+            border-width: 1px 0 0 1px;
+            top: 0;
+            left: 0;
+        }
+
+
+
+        &__data {
+            &-column {
+                gap: 0;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .blog {
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+
+            align-items: start;
+        }
+    }
+}
