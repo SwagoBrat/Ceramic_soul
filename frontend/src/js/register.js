@@ -1,6 +1,5 @@
-console.log(document.getElementById("btn").value);
-
-document.getElementById("btn").addEventListener("click", async function() {
+document.getElementById("btn-register").addEventListener("click", async function() {
+    const name = document.getElementById("username").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     try {
@@ -9,7 +8,7 @@ document.getElementById("btn").addEventListener("click", async function() {
                 headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({email, password})
+            body: JSON.stringify({name, email, password})
         })
         alert(await response.text())
     } catch (e) {

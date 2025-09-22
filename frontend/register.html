@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style>
+        .touch__form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .touch__label,
+        .touch__input,
+        .touch__btn {
+            margin-top: 1%;
+        }
+        #user-info {
+            justify-self: end;
+            margin-right: 15%;
+        }
+    </style>
+</head>
+<body>
+<div id="user-info">No User</div>
+<div class="touch__form">
+    <label class="touch__label" for="username">Username</label>
+    <input class="touch__input" id="username" placeholder="Username" />
+    <label class="touch__label" for="email">Email</label>
+    <input class="touch__input" type="email" id="email" name="email" placeholder="Email" />
+    <label class="touch__label" for="password">Password</label>
+    <input class="touch__input" type="password" id="password" placeholder="Password">
+    <button class="touch__btn" id="btn-register">Register</button>
+</div>
+<script src="/src/js/register.js"></script>
+<script src="/src/js/check.js"></script>
+</body>
+</html>
