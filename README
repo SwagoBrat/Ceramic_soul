@@ -1,0 +1,3 @@
+Для запуску фронта:
+cd frontend
+npx vite
