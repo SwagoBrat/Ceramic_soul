@@ -3,9 +3,9 @@ package org.example.testspring.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection="users")
+@Document(collection="users") //Вказую у яку бд я записую
 public class User {
-    @Id
+    @Id //Для красоти :)
     private String id;
     private String name;
     private String email;

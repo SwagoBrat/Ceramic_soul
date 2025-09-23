@@ -8,16 +8,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin("http://localhost:5173")
-@RestController
-@RequestMapping("/api")
+@CrossOrigin("http://localhost:5173") //айпі з якого приймаю запити
+@RestController //REST (для JSON)
+@RequestMapping("/api") //Який шлях у класу на бекенді (localhost:8080/api(
 public class LoginController {
 
-    @Autowired
+    @Autowired //Прікольна штука, ініціалізує об'єкт на етапі компіляції
     UserRepository userRepository;
 
-    @PostMapping("/login")
-    public ResponseEntity<String> login(@RequestBody User user) {
+    @PostMapping("/login") //POST (оскільки передаю та аналогічно до 13 рядка)
+    public ResponseEntity<String> login(@RequestBody User user) { //ResponeEntity - для оброки запитів. @RequestBody - Spring формує клас типу User з даних JSON
         if (userRepository.existsByEmail(user.getEmail())) {
             User mongoUser = userRepository.findByEmail(user.getEmail());
             if (mongoUser.getPassword().equals(HashService.hash(user.getPassword()))) {
