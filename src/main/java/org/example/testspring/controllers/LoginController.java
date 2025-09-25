@@ -3,7 +3,6 @@ package org.example.testspring.controllers;
 import org.example.testspring.components.JwtUtility;
 import org.example.testspring.model.User;
 import org.example.testspring.repository.UserRepository;
-import org.example.testspring.services.AuthorizedUserService;
 import org.example.testspring.services.HashService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
