@@ -8,12 +8,10 @@ document.getElementById("btn-login").addEventListener("click", async function() 
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({email, password})
-        })
-        const name = await response.text();
-        alert(name)
-        if (response.ok) {
-            document.getElementById("user-info").textContent = name;
-        }
+        }).then(res => res.json())
+            .then(data => {
+                localStorage.setItem("jwtToken", data.token);
+            })
     } catch (e) {
         alert(e);
     }
