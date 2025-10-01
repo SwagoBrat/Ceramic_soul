@@ -9,11 +9,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
-        .touch__label,
-        .touch__input,
-        .touch__btn {
-            margin-top: 1%;
+            gap: 10px;
         }
         #user-info {
             justify-self: end;
@@ -22,7 +18,7 @@
     </style>
 </head>
 <body>
-<div id="user-info">No User</div>
+<div id="user-info"></div>
 <div class="touch__form">
     <label class="touch__label" for="username">Username</label>
     <input class="touch__input" id="username" placeholder="Username" />
@@ -31,8 +27,9 @@
     <label class="touch__label" for="password">Password</label>
     <input class="touch__input" type="password" id="password" placeholder="Password">
     <button class="touch__btn" id="btn-register">Register</button>
+    <a class="touch__btn" href="login.html" id="log">Have an account?</a>
 </div>
-<script src="/src/js/register.js"></script>
-<script src="/src/js/check.js"></script>
+<script type="module" src="/src/js/register.js"></script>
+<script type="module" src="/src/js/check.js"></script>
 </body>
 </html>

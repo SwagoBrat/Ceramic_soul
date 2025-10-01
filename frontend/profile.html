@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <style>
+        .touch__form {
+            font-size: 1.5rem;
+        }
+        .touch__label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        #name, #email {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="touch__form">
+        <div class="touch__label">
+            <label for="name">Name</label>
+            <input id="name" readonly>
+            <label for="email">Email</label>
+            <input id="email" readonly>
+        </div>
+    </div>
+<script src="/src/js/profile.js"></script>
+</body>
+</html>

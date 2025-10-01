@@ -14,15 +14,15 @@ public class JwtUtility {
     private final Key key = Keys.secretKeyFor(SignatureAlgorithm.HS256);
     private final long expirationTimeInSeconds = 60 * 60 * 1000;
 
-    public String generateToken(String username) {
+    public String generateToken(String data) {
         return Jwts.builder()
-                .setSubject(username)
+                .setSubject(data)
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(System.currentTimeMillis() + expirationTimeInSeconds))
                 .signWith(key)
                 .compact();
     }
-    public String getUsernameFromToken(String token) {
+    public String getDataFromToken(String token) {
         return parseClaims(token).getSubject();
     }
     public boolean validateToken(String token) {

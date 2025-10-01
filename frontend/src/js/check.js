@@ -1,4 +1,6 @@
-check()
+if (localStorage.getItem("jwtToken") != null) {
+    check()
+}
 async function check() {
     const response = await fetch("http://localhost:8080/api/check", {
         method: "GET",
