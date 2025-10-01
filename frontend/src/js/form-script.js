@@ -14,8 +14,7 @@ document.getElementById("send").addEventListener("click", async function() {
             body: JSON.stringify({name, email, question})
         });
         const text = await response.text();
-        alert(text)
     } catch (e) {
-        alert(e);
+        console.log(e);
     }
 })

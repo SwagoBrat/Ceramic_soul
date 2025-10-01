@@ -10,8 +10,7 @@ document.getElementById("btn-register").addEventListener("click", async function
             },
             body: JSON.stringify({name, email, password})
         })
-        alert(await response.text())
     } catch (e) {
-        alert(e);
+        console.log(e);
     }
 })

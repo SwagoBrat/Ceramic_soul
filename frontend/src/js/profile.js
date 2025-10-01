@@ -11,6 +11,6 @@ async function profile() {
         document.getElementById("name").value = user.name;
         document.getElementById("email").value = user.email;
     } catch (e) {
-        alert(e);
+        console.log(e);
     }
 }

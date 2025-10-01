@@ -16,7 +16,6 @@ public class DataFormController {
 
     @PostMapping("/data")
     public ResponseEntity<String> proccessDataForm(@RequestBody DataForm dataForm) {
-        System.out.println(dataForm.getName());
         repo.save(dataForm);
         return ResponseEntity.ok(dataForm.getName());
     }

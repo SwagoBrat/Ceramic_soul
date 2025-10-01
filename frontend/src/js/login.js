@@ -14,6 +14,6 @@
                 })
             location.reload()
         } catch (e) {
-            alert(e);
+            console.log(e);
         }
     })
