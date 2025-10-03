@@ -9,15 +9,15 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
-        .touch__label,
-        .touch__input,
-        .touch__btn {
-            margin-top: 1%;
+            gap: 10px;
         }
         #user-info {
             justify-self: end;
             margin-right: 15%;
+        }
+        #output {
+            color: red;
+            font-size: 1rem;
         }
     </style>
 </head>
@@ -29,6 +29,7 @@
     <label class="touch__label" for="password">Password</label>
     <input class="touch__input" type="password" id="password" placeholder="Password">
     <button class="touch__btn" id="btn-login">Login</button>
+    <div id="output"></div>
 </div>
 <script type="module" src="/src/js/login.js"></script>
 <script type="module" src="/src/js/check.js"></script>

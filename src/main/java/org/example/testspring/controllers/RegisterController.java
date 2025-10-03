@@ -24,7 +24,7 @@ public class RegisterController {
     @PostMapping("/reg")
     public ResponseEntity<String> register(@RequestBody User user) {
         if (userRepository.existsByEmail(user.getEmail())) {
-            return ResponseEntity.badRequest().body("Вже є");
+            return ResponseEntity.badRequest().body("Account with this email already exists");
         }
         user.setPassword(HashService.hash(user.getPassword()));
         return ResponseEntity.ok(userRepository.save(user).getPassword());

@@ -8,11 +8,14 @@
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify({email, password})
-            }).then(res => res.json())
-                .then(data => {
-                    localStorage.setItem("jwtToken", data.token);
-                })
-            location.reload()
+            })
+            if (!response.ok) {
+                document.getElementById("output").textContent = await response.text();
+            } else {
+                const json = await response.json();
+                localStorage.setItem("jwtToken", json.token);
+                location.reload()
+            }
         } catch (e) {
             console.log(e);
         }
